@@ -39,12 +39,11 @@ public class Population {
     public Map<String,List<Person >> mappingByFirstName(){
         Map<String,List<Person >> firstNameMap =new HashMap<>();
         for (Person person : personsList) {
-            if(!firstNameMap.containsKey(person.getLastName())){
-                firstNameMap.put(person.getLastName(),new ArrayList<Person>());
+            if(!firstNameMap.containsKey(person.getFirstName())){
+                firstNameMap.put(person.getFirstName(),new ArrayList<Person>());
             }
-            firstNameMap.get(person.getLastName()).add(person);
+            firstNameMap.get(person.getFirstName()).add(person);
         }
-
         return firstNameMap;
     }
     public Map<Integer,List<Person >> mappingByIdNumber(){

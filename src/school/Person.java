@@ -31,7 +31,15 @@ public class Person {
         return lastName;
     }
 
+    public String getFirstName() {
+        return firstName;
+    }
+
     public int getIdNumber() {
         return idNumber;
+    }
+
+    public String toString(){
+        return "First Name: "+firstName+", \n"+"Last Name: "+lastName+", \n"+"Id Number: "+idNumber;
     }
 }
